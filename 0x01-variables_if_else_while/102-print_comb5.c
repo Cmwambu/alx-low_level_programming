@@ -12,16 +12,18 @@
  */
 int main(void)
 {
-	int first_num, second_num;
+	int num;
 
-	/* Iterate from 0 to 99 for the first number */
-	for (first_num = 0; first_num < 100; first_num++)
+	/* Iterate from 0 to 99 for the numbers */
+	for (num = 0; num < 100; num++)
 	{
-		/* Iterate from 0 to 99 for the second number */
-		for (second_num = 0; second_num < 100; second_num++)
+		int first_num = num / 10;
+		int second_num = num % 10;
+
+		/* Iterate from num to 99 for the second number */
+		for (; second_num < 100; second_num++)
 		{
-			/* Check if the numbers are in ascending order */
-			if (first_num <= second_num)
+			if (num != second_num)
 			{
 				/* Print the first number with two digits */
 				putchar(first_num / 10 + '0');
@@ -34,7 +36,7 @@ int main(void)
 				putchar(second_num % 10 + '0');
 
 				/* Print ", " for separation except for the last combination */
-				if (first_num != 99 || second_num != 99)
+				if (num != 99 || second_num != 99)
 				{
 					putchar(',');
 					putchar(' ');
