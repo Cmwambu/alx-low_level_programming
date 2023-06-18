@@ -1,7 +1,8 @@
 /*
  * File: 3-print_alphabets.c
  * Author: [Cmwambu]
- * Description: A program to print the alphabet in lowercase and uppercase using the putchar function.
+ * Description: A program to print the alphabet
+ * in lowercase and uppercase using the putchar function.
  */
 
 #include <stdio.h>
