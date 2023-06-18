@@ -12,11 +12,13 @@ int main(void)
 {
 	char letter;
 
-	/* Start from 'z' (ASCII value 122) and print the lowercase alphabet in reverse */
+	/* Start from 'z' (ASCII value 122) and print
+	 * the lowercase alphabet in reverse
+	*/
 	for (letter = 'z'; letter >= 'a'; letter--)
 		putchar(letter);
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
