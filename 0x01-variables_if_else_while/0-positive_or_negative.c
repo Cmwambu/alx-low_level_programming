@@ -1,7 +1,7 @@
 /*
  * File: 0-positive_or_negative.c
  * Author:[Cmwambu]
- * Description: A program to print whether a randomly 
+ * Description: A program to print whether a randomly
  * generated number is positive, negative, or zero.
  */
 
