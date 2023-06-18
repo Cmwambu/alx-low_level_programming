@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Get the C file name from the environment variable
+c_file_name=$CFILE
+
+# Remove the .c extension and add .s extension for the output file
+output_file_name="${c_file_name%.c}.s"
+
+# Generate the assembly code using gcc with the -S flag
+gcc -S -masm=intel "$c_file_name" -o "$output_file_name"
